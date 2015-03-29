@@ -1,0 +1,3 @@
+[submodule "External/hoedown"]
+	path = External/hoedown
+	url = https://github.com/safx/hoedown.git

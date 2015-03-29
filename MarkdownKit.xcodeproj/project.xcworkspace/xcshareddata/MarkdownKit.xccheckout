@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>03E205AD-9B29-40E8-8663-CADC9CEB8272</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MarkdownKit</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>57ADE22C4131FF8C6338C12D09EB8D6588C1D923</key>
+		<string>github.com:safx/MarkdownAST-Swift.git</string>
+		<key>9635D08B964B59C48EA8E6805E0CB50B3BAF24BE</key>
+		<string>https://github.com/safx/hoedown.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MarkdownKit.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>57ADE22C4131FF8C6338C12D09EB8D6588C1D923</key>
+		<string>../..</string>
+		<key>9635D08B964B59C48EA8E6805E0CB50B3BAF24BE</key>
+		<string>../..External/hoedown</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:safx/MarkdownAST-Swift.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>57ADE22C4131FF8C6338C12D09EB8D6588C1D923</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9635D08B964B59C48EA8E6805E0CB50B3BAF24BE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>hoedown</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>57ADE22C4131FF8C6338C12D09EB8D6588C1D923</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MarkdownKit</string>
+		</dict>
+	</array>
+</dict>
+</plist>
