@@ -8,4 +8,4 @@ script:
 - set -o pipefail
 - (cd External/hoedown && make test)
 - xcodebuild -project MarkdownKit.xcodeproj -scheme MarkdownKit test -sdk iphonesimulator8.1 | xcpretty -c
-#- pod lib lint --quick
+- pod lib lint --quick
