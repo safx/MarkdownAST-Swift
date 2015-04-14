@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MarkdownKit"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "Simple Makrdown toolkit"
   s.homepage     = "https://github.com/safx/MarkdownKit"
   s.license      = { :type => "MIT", :file => "LICENSE" }
