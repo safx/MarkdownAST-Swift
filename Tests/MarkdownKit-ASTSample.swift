@@ -11,28 +11,27 @@ import MarkdownKit
 
 @objc public class MDKNode : NSObject {
     var contents: [NSObject] = [NSObject]()
-    let type: UInt32 = 0
+    let type: UInt32
 
     init(type: UInt32) {
         self.type = type
     }
 
     public override var description : String {
-        var c = ""
-        for var i = 0; i < contents.count; ++i {
-            c += contents[i].description
+        let c = contents.reduce("") { (t, c) in
+            return t + c.description
         }
 
-        if type >= HOEDOWN_NODE_BLOCK_LAST.value {
+        if type >= HOEDOWN_NODE_BLOCK_LAST.rawValue {
             return "\(c)"
         }
 
         let t = { (type: UInt32) -> String in
             switch type {
-            case HOEDOWN_NODE_DOCUMENT.value      : return "body"
-            case HOEDOWN_NODE_PARAGRAPH.value     : return "p"
-            case HOEDOWN_NODE_BLOCKCODE.value     : return "pre"
-            case HOEDOWN_NODE_BLOCKQUOTE.value    : return "blockquote"
+            case HOEDOWN_NODE_DOCUMENT.rawValue      : return "body"
+            case HOEDOWN_NODE_PARAGRAPH.rawValue     : return "p"
+            case HOEDOWN_NODE_BLOCKCODE.rawValue     : return "pre"
+            case HOEDOWN_NODE_BLOCKQUOTE.rawValue    : return "blockquote"
             default: fatalError()
             }
         }(type)
@@ -77,16 +76,16 @@ public func parse(markdownText: String) -> MDKNode {
 
     let renderer = MDKRenderer()
 
-    var pool = NSMutableArray()
+    let pool = NSMutableArray()
 
     renderer.block_new = { type in
-        let a = MDKNode(type: type.value)
+        let a = MDKNode(type: type.rawValue)
         pool.addObject(a)
         return asVoid(a)
     }
 
     renderer.span_new = { type in
-        let a = MDKNode(type: type.value)
+        let a = MDKNode(type: type.rawValue)
         pool.addObject(a)
         return asVoid(a)
     }
@@ -101,7 +100,7 @@ public func parse(markdownText: String) -> MDKNode {
     renderer.blockcode = { node_, code, lang in
         let node = asNode(node_)
 
-        let codeBlock = MDKNode(type: HOEDOWN_NODE_BLOCKCODE.value)
+        let codeBlock = MDKNode(type: HOEDOWN_NODE_BLOCKCODE.rawValue)
         codeBlock.addObject(code)
         pool.addObject(codeBlock)
 

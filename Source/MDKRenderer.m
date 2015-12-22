@@ -65,11 +65,11 @@ static void render_blockcode(void* node, const hoedown_buffer *text, const hoedo
     HOEDOWN_CALLBACK_2(blockcode, Str(text), Str(lang));
 }
 
-static void render_blockquote(void* node, const void *content, const hoedown_renderer_data *data) {
+static void render_blockquote(void* node, void *content, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_1(blockquote, content);
 }
 
-static void render_header(void* node, const void *content, int level, const hoedown_renderer_data *data) {
+static void render_header(void* node, void *content, int level, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_2(header, content, level);
 }
 
@@ -77,43 +77,43 @@ static void render_hrule(void* node, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_0(hrule);
 }
 
-static void render_list(void* node, const void *content, hoedown_list_flags flags, const hoedown_renderer_data *data) {
+static void render_list(void* node, void *content, hoedown_list_flags flags, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_2(list, content, flags);
 }
 
-static void render_listitem(void* node, const void *content, hoedown_list_flags flags, const hoedown_renderer_data *data) {
+static void render_listitem(void* node, void *content, hoedown_list_flags flags, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_2(listitem, content, flags);
 }
 
-static void render_paragraph(void* node, const void *content, const hoedown_renderer_data *data) {
+static void render_paragraph(void* node, void *content, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_1(paragraph, content);
 }
 
-static void render_table(void* node, const void *content, const hoedown_renderer_data *data) {
+static void render_table(void* node, void *content, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_1(table, content);
 }
 
-static void render_table_header(void* node, const void *content, const hoedown_renderer_data *data) {
+static void render_table_header(void* node, void *content, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_1(table_header, content);
 }
 
-static void render_table_body(void* node, const void *content, const hoedown_renderer_data *data) {
+static void render_table_body(void* node, void *content, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_1(table_body, content);
 }
 
-static void render_table_row(void* node, const void *content, const hoedown_renderer_data *data) {
+static void render_table_row(void* node, void *content, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_1(table_row, content);
 }
 
-static void render_table_cell(void* node, const void *content, hoedown_table_flags flags, const hoedown_renderer_data *data) {
+static void render_table_cell(void* node, void *content, hoedown_table_flags flags, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_2(table_cell, content, flags);
 }
 
-static void render_footnotes(void* node, const void *content, const hoedown_renderer_data *data) {
+static void render_footnotes(void* node, void *content, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_1(footnotes, content);
 }
 
-static void render_footnote_def(void* node, const void *content, unsigned int num, const hoedown_renderer_data *data) {
+static void render_footnote_def(void* node, void *content, unsigned int num, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_2(footnote_def, content, num);
 }
 
@@ -131,23 +131,23 @@ static int render_codespan(void* node, const hoedown_buffer *text, const hoedown
     HOEDOWN_CALLBACK_1_RET(codespan, Str(text));
 }
 
-static int render_double_emphasis(void* node, const void *content, const hoedown_renderer_data *data) {
+static int render_double_emphasis(void* node, void *content, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_1_RET(double_emphasis, content);
 }
 
-static int render_emphasis(void* node, const void *content, const hoedown_renderer_data *data) {
+static int render_emphasis(void* node, void *content, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_1_RET(emphasis, content);
 }
 
-static int render_underline(void* node, const void *content, const hoedown_renderer_data *data) {
+static int render_underline(void* node, void *content, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_1_RET(underline, content);
 }
 
-static int render_highlight(void* node, const void *content, const hoedown_renderer_data *data) {
+static int render_highlight(void* node, void *content, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_1_RET(highlight, content);
 }
 
-static int render_quote(void* node, const void *content, const hoedown_renderer_data *data) {
+static int render_quote(void* node, void *content, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_1_RET(quote, content);
 }
 
@@ -159,19 +159,19 @@ static int render_linebreak(void* node, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_0_RET(linebreak);
 }
 
-static int render_link(void* node, const void *content, const hoedown_buffer *link, const hoedown_buffer *title, const hoedown_renderer_data *data) {
+static int render_link(void* node, void *content, const hoedown_buffer *link, const hoedown_buffer *title, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_3_RET(link, content, Str(link), Str(title));
 }
 
-static int render_triple_emphasis(void* node, const void *content, const hoedown_renderer_data *data) {
+static int render_triple_emphasis(void* node, void *content, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_1_RET(triple_emphasis, content);
 }
 
-static int render_strikethrough(void* node, const void *content, const hoedown_renderer_data *data) {
+static int render_strikethrough(void* node, void *content, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_1_RET(strikethrough, content);
 }
 
-static int render_superscript(void* node, const void *content, const hoedown_renderer_data *data) {
+static int render_superscript(void* node, void *content, const hoedown_renderer_data *data) {
     HOEDOWN_CALLBACK_1_RET(superscript, content);
 }
 

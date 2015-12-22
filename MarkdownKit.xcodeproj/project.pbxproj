@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D2D30581C29886C001AD48E /* MDKRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D828A2F1ABBFE2200D59453 /* MDKRenderer.m */; };
+		8D2D30591C29888D001AD48E /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D42B7D51AB47C7E00EDC2ED /* autolink.c */; };
+		8D2D305A1C29888D001AD48E /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D42B7D71AB47C7E00EDC2ED /* buffer.c */; };
+		8D2D305B1C29888D001AD48E /* document.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D42B7D91AB47C7E00EDC2ED /* document.c */; };
+		8D2D305C1C29888D001AD48E /* escape.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D42B7DB1AB47C7E00EDC2ED /* escape.c */; };
+		8D2D305D1C29888D001AD48E /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D42B7DD1AB47C7E00EDC2ED /* html.c */; };
+		8D2D305E1C29888D001AD48E /* html_blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D42B7DF1AB47C7E00EDC2ED /* html_blocks.c */; };
+		8D2D305F1C29888D001AD48E /* html_smartypants.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D42B7E01AB47C7E00EDC2ED /* html_smartypants.c */; };
+		8D2D30601C29888D001AD48E /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D42B7E31AB47C7E00EDC2ED /* version.c */; };
 		8D42B7BE1AB31A3F00EDC2ED /* MarkdownKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D42B7BD1AB31A3F00EDC2ED /* MarkdownKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D42B7C41AB31A3F00EDC2ED /* MarkdownKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D42B7B81AB31A3F00EDC2ED /* MarkdownKit.framework */; };
 		8D42B7CB1AB31A3F00EDC2ED /* MarkdownKitHTMLRenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42B7CA1AB31A3F00EDC2ED /* MarkdownKitHTMLRenderTests.swift */; };
@@ -332,7 +341,9 @@
 		8D42B7AF1AB31A3F00EDC2ED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Safx Developers";
 				TargetAttributes = {
 					8D42B7B71AB31A3F00EDC2ED = {
@@ -431,6 +442,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D2D305E1C29888D001AD48E /* html_blocks.c in Sources */,
+				8D2D305C1C29888D001AD48E /* escape.c in Sources */,
+				8D2D30591C29888D001AD48E /* autolink.c in Sources */,
+				8D2D305D1C29888D001AD48E /* html.c in Sources */,
+				8D2D30601C29888D001AD48E /* version.c in Sources */,
+				8D2D305A1C29888D001AD48E /* buffer.c in Sources */,
+				8D2D305F1C29888D001AD48E /* html_smartypants.c in Sources */,
+				8D2D305B1C29888D001AD48E /* document.c in Sources */,
+				8D2D30581C29886C001AD48E /* MDKRenderer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +498,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -554,6 +575,7 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blogspot.safx-dev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -573,6 +595,7 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blogspot.safx-dev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -592,6 +615,7 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blogspot.safx-dev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -605,6 +629,7 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blogspot.safx-dev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -626,6 +651,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blogspot.safx-dev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = MarkdownKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -646,6 +672,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blogspot.safx-dev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = MarkdownKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -667,6 +694,7 @@
 				INFOPLIST_FILE = "Tests-OSX/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blogspot.safx-dev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -684,6 +712,7 @@
 				INFOPLIST_FILE = "Tests-OSX/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blogspot.safx-dev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -726,6 +755,7 @@
 				8D9E272C1AD1897100906ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D9E272D1AD1897100906ECD /* Build configuration list for PBXNativeTarget "MarkdownKit-OSXTests" */ = {
 			isa = XCConfigurationList;
@@ -734,6 +764,7 @@
 				8D9E272F1AD1897100906ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

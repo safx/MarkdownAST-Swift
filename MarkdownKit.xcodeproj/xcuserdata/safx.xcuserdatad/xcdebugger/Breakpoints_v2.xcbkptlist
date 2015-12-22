@@ -72,6 +72,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "MarkdownKitTests.MarkdownKitRenderTests.(testParagraph (MarkdownKitTests.MarkdownKitRenderTests) -&gt; () -&gt; ()).(closure #1)"
                   moduleName = "MarkdownKitTests"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/safx/src/Sample/MarkdownKit/Tests/MarkdownKitRenderTests.swift"
                   timestampString = "449297950.388997"
                   startingColumnNumber = "9223372036854775807"
@@ -86,6 +87,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "MarkdownKitTests.MarkdownKitRenderTests.(testParagraph (MarkdownKitTests.MarkdownKitRenderTests) -&gt; () -&gt; ()).(closure #1).(implicit closure #3)"
                   moduleName = "MarkdownKitTests"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/safx/src/Sample/MarkdownKit/Tests/MarkdownKitRenderTests.swift"
                   timestampString = "449297950.389282"
                   startingColumnNumber = "9223372036854775807"
@@ -100,6 +102,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "MarkdownKitTests.MarkdownKitRenderTests.(testParagraph (MarkdownKitTests.MarkdownKitRenderTests) -&gt; () -&gt; ()).(closure #1).(implicit closure #4)"
                   moduleName = "MarkdownKitTests"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/safx/src/Sample/MarkdownKit/Tests/MarkdownKitRenderTests.swift"
                   timestampString = "449297950.389556"
                   startingColumnNumber = "9223372036854775807"
@@ -114,6 +117,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "reabstraction thunk helper from @callee_owned () -&gt; (@owned ObjectiveC.NSString) to @callee_owned () -&gt; (@out ObjectiveC.NSString)"
                   moduleName = "MarkdownKitTests"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/safx/src/Sample/MarkdownKit/Tests/MarkdownKitRenderTests.swift"
                   timestampString = "449297950.389726"
                   startingColumnNumber = "9223372036854775807"
@@ -176,7 +180,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "External/hoedown/src/document.c"
@@ -192,7 +196,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "External/hoedown/src/document.c"
@@ -208,7 +212,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "External/hoedown/src/document.c"
