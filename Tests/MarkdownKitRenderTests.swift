@@ -65,7 +65,7 @@ class MarkdownKitRenderTests: XCTestCase {
         renderer.paragraph = { _, content_ in
             let content = MDKArary(content_)
             XCTAssertEqual(content.count, 1)
-            XCTAssertEqual(content[0] as NSString, "foo\nbar")
+            XCTAssertEqual(content[0] as? NSString, "foo\nbar")
             expectation1.fulfill()
         }
 
@@ -81,7 +81,7 @@ class MarkdownKitRenderTests: XCTestCase {
         renderer.paragraph = { _, content_ in
             let content = MDKArary(content_)
             XCTAssertEqual(content.count, 1)
-            XCTAssertEqual(content[0] as NSString, "foo")
+            XCTAssertEqual(content[0] as? NSString, "foo")
             expectation1.fulfill()
         }
 
