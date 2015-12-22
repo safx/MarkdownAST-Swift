@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "MarkdownKit"
-  s.version      = "0.1.1"
-  s.summary      = "Simple Makrdown toolkit"
+  s.version      = "0.2.0"
+  s.summary      = "Simple Makrdown toolkit using hoedown"
   s.homepage     = "https://github.com/safx/MarkdownKit"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "MATSUMOTO Yuji" => "safxdev@gmail.com" }
